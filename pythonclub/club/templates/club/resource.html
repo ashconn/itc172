@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Resources Page</h2>
+<p>Here you will find various resources to help with Python and Web Development coding!</p>
+<table class='table'>
+    <tr>
+        <th>Name</th>
+        <th>URL</th>
+        <th>Description</th>
+    </tr>
+    {% for item in type_list %}
+        <tr>
+            <td>{{ item.resname }}</td>
+            <td>{{ item.resurl }}</td>
+            <td>{{ item.description }}</td>
+        </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}
