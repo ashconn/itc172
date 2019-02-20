@@ -26,7 +26,7 @@ class MeetingMin(models.Model):
         return self.meetingid
 
     class Meta:
-        db_table='MeetingMin'
+        db_table='Minutes'
 
 class Resource(models.Model):
     resname = models.CharField(max_length=255)
