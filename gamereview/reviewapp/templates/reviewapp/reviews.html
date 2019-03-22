@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Reviews</h2>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Review</th>
+    </tr>
+    {% for item in review_list %}
+    <tr>
+        <td><u>{{ item.reviewtitle }}</u></td>
+        <td><i>{{ item.reviewdate }}</i></td>
+        <td>{{ item.revuewtext }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Games</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    {% for item in game_list %}
+    <tr>
+        <td>{{ item.gamename }}</td>
+        <td>{{ item.gametype }}</td>
+        <td>{{ item.gamedescription }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
